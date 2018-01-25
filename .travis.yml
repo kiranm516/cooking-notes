@@ -1,7 +1,7 @@
 language: python
 
 install:
-  - pip install python-sphinx
+  - pip install -U sphinx
 
 deploy:
   provider: pages
