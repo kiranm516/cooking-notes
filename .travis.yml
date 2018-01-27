@@ -3,6 +3,8 @@ language: python
 install:
   - pip install -U sphinx
 
+script: make html
+
 deploy:
   provider: pages
   skip-cleanup: true
