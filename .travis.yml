@@ -15,10 +15,11 @@ script: make html
 
 after_success:
   - git clone git://${GH_REPO}
-  - mv -f build/html ${REPO}/notes
+  - mv -f build/html/* ${REPO}/notes/
   - cd ${REPO}
   - git config user.email ${EMAIL}
   - git config user.name "Kiran Marturu"
   - git add notes/
   - git commit -m "Travis deploy"
-  - git push "https://${GH_TOKEN}@${GH_REPO}" master > /dev/null 2>&1
+  - echo "https://${GH_TOKEN}@${GH_REPO}"
+  - git push "https://${GH_TOKEN}@${GH_REPO}"
