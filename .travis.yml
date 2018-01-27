@@ -4,12 +4,21 @@ install:
   - pip install -U sphinx
   - pip install -U sphinx_rtd_theme
 
+env:
+  global:
+    - USER="kiranm516"
+    - EMAIL="kiranm516@gmail.com"
+    - REPO="kiranm516.github.io"
+    - GH_REPO="github.com/${USER}/${REPO}.git"
+
 script: make html
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  on:
-    branch: master
+after_success:
+  - git clone git://${GH_REPO}
+  - mv -f build/html ${REPO}/notes
+  - cd ${REPO}
+  - git config user.email ${EMAIL}
+  - git config user.name "Kiran Marturu"
+  - git add notes/
+  - git commit -m "Travis deploy"
+  - git push "https://${GH_TOKEN}@${GH_REPO}" master > /dev/null 2>&1
