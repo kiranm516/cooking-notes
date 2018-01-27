@@ -2,6 +2,7 @@ language: python
 
 install:
   - pip install -U sphinx
+  - pip install -U sphinx_rtd_theme
 
 script: make html
 
