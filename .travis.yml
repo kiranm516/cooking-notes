@@ -22,5 +22,6 @@ after_success:
   - git config user.email ${EMAIL}
   - git config user.name "Kiran Marturu"
   - git add notes/
-  - git commit -m "Travis deploy"
+  - git commit -m "Deploy on $(date +%F_%R)"
+  - echo $TRAVIS_COMMIT_MESSAGE
   - git push "https://${GH_TOKEN}@${GH_REPO}"
