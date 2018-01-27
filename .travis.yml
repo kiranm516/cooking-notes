@@ -8,7 +8,7 @@ script: make html
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: gh-token
+  github-token: $GH_TOKEN
   keep-history: true
   on:
     branch: master
