@@ -2,7 +2,7 @@ language: python
 
 install:
   - pip install -U sphinx
-  - pip install -U sphinx_rtd_theme
+  - pip install -U sphinx_rtd_theme-0.2.5b2-py2.py3-none-any.whl
 
 env:
   global:
