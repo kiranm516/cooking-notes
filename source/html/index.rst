@@ -5,13 +5,12 @@ HTML
 Special characters codes
 ========================
 
-========= ====
-Character Code
-========= ====
-&         ``&amp;``
-========= ====
+.. csv-table::
 
-=======
+   **Character**,**Code**
+   &, ``&amp;``
+
+
 Submitting readonly fields
 ==========================
 Adding a hidden field with the same name will sends the data when the form is submitted.
