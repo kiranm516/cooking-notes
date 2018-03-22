@@ -14,3 +14,4 @@ My Scribblings's
    oracle/index.rst
    tools/tools-index.rst
    php/index.rst
+   sw-eng/index.rst
