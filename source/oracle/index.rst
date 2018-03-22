@@ -7,6 +7,7 @@ Oracle
 
    dba.rst
    sql.rst
+   plsql.rst
 
 Links for reference
 ===================
