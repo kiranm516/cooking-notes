@@ -5,6 +5,7 @@ My Scribblings's
    :maxdepth: 1
 
    asp.net-webforms/index.rst
+   business-communication/index.rst
    code-design/index.rst
    docker/index.rst
    git/index.rst
