@@ -1,3 +1,2 @@
-# dev-notes-source [![Build Status](https://travis-ci.org/kiranm516/dev-notes-source.svg?branch=master)](https://travis-ci.org/kiranm516/dev-notes-source)
-My development notes sphinx doc source
+# My Scrriblings [![pipeline status](https://gitlab.com/kiranm516/kiranm516.gitlab.io/badges/master/pipeline.svg)](https://gitlab.com/kiranm516/kiranm516.gitlab.io/commits/master)
 
