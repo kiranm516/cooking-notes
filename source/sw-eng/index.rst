@@ -6,6 +6,9 @@ Software Engineering & Design
    :maxdepth: 1
 
    requirements.rst
+   high-level-design.rst
+   se.rst
+   writing-requirements.rst
 
 Links for reference
 -------------------

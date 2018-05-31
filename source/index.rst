@@ -12,7 +12,9 @@ My Scribblings's
    gradle/index.rst
    guides/index.rst
    html/index.rst
+   java/index.rst
    javascript/index.rst
+   linux/index.rst
    mysql/index.rst
    oracle/index.rst
    php/index.rst

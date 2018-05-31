@@ -108,6 +108,7 @@ html_sidebars = {
     ]
 }
 
+html_show_sphinx = False
 
 # -- Options for HTMLHelp output ------------------------------------------
 
