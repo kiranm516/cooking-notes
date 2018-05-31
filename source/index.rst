@@ -1,3 +1,4 @@
+================
 My Scribblings's
 ================
 
@@ -20,3 +21,9 @@ My Scribblings's
    php/index.rst
    sw-eng/index.rst
    tools/index.rst
+
+Useful Libraries
+================
+
+Date picker for Bootstrap v4
+   https://tempusdominus.github.io/bootstrap-4/
