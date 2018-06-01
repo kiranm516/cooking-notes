@@ -1,0 +1,26 @@
+language: python
+
+install:
+  - pip install -U sphinx
+  - pip install -U sphinx_rtd_theme-0.2.5b2-py2.py3-none-any.whl
+
+env:
+  global:
+    - USER="kiranm516"
+    - EMAIL="kiranm516@gmail.com"
+    - REPO="kiranm516.github.io"
+    - GH_REPO="github.com/${USER}/${REPO}.git"
+
+script: make html
+
+after_success:
+  - git clone git://${GH_REPO}
+  - rm -r ${REPO}/notes/
+  - mkdir ${REPO}/notes/
+  - mv -f build/html/* ${REPO}/notes/
+  - cd ${REPO}
+  - git config user.email ${EMAIL}
+  - git config user.name "Kiran Marturu"
+  - git add notes/
+  - git commit -m "Deploy on $(date +%F_%R) - ${TRAVIS_COMMIT_MESSAGE}"
+  - git push "https://${GH_TOKEN}@${GH_REPO}"
