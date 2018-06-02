@@ -5,6 +5,22 @@ Java Server Pages
 JSP
 ===
 
+page directive
+==============
+
+.. code:: jsp
+   
+   // Set encoding of the response
+   <%@ page contentType="text/html; charset=UTF-8" %>
+
+   <%@ page errorPage="errorpage.jsp" %>
+
+   <%@ page isErrorPage="true" %>
+
+   // To set the source encoding of the page itself
+   <%@ page pageEncoding="UTF-8" %>
+
+
 Import classes in JSP
 ---------------------
 
