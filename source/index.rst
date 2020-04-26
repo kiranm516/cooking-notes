@@ -1,31 +1,15 @@
 ================
-My Scribblings's
+My Cooking Notes
 ================
 
 .. toctree::
    :maxdepth: 1
 
-   resources/index.rst
-   asp.net-webforms/index.rst
-   business-communication/index.rst
-   code-design/index.rst
-   docker/index.rst
-   git/index.rst
-   gradle/index.rst
-   guides/index.rst
-   html/index.rst
-   java/index.rst
-   javascript/index.rst
-   linux/index.rst
-   mysql/index.rst
-   oracle/index.rst
-   php/index.rst
-   security/index.rst
-   sw-eng/index.rst
-   tools/index.rst
+   rice-varities/index.rst
 
-Useful Libraries
-================
 
-Date picker for Bootstrap v4
-   https://tempusdominus.github.io/bootstrap-4/
+Reference Site
+==============
+
+Bong Eats
+   https://www.bongeats.com/
